@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# Virtual env
+.venv/
+env/
+venv/
+
+# VS Code
+.vscode/
+
+# Cache
+.pytest_cache/
+.cache/
+
+# Models / large files
+*.gguf
+*.bin
+*.pt
+*.safetensors
