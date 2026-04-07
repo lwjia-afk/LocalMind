@@ -1,16 +1,16 @@
 from venv import logger
 
 import requests
-from models.Message import Message
-from LLM.LLMResult import LLMResult
-from LLM.LLMClient.LLMClientInterface import LLMClientInterface
-from LogManager import LogManager
-from ConfigManager import ConfigManager
+from models.message import Message
+from LLM.result import LLMResult
+from LLM.LLMClient.base import BaseLLMClient
+from log_manager import LogManager
+from config_manager import ConfigManager
 
 logger = LogManager.get_logger(__name__)
 
 
-class OllamaClient(LLMClientInterface):
+class OllamaClient(BaseLLMClient):
  
     def __init__(self):
         self.generate_url = ConfigManager.get("llm.ollama.generate_url")

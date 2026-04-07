@@ -3,10 +3,10 @@ sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
 
 from LLM import OllamaClient
-from LLMChatManager import LLMChatManager
+from chat_manager import LLMChatManager
 import logging
-from LogManager import LogManager
-from ConfigManager import ConfigManager
+from log_manager import LogManager
+from config_manager import ConfigManager
 
 config = ConfigManager.load_config()
 

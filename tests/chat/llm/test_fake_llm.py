@@ -1,7 +1,7 @@
-from LLM import LLMClientInterface
+from LLM import BaseLLMClient
 from LLM import LLMResult
 
-class fakeLLMClient(LLMClientInterface):
+class fakeLLMClient(BaseLLMClient):
     def __init__(self):
         pass
 

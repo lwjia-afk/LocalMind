@@ -1,8 +1,8 @@
 from abc import ABC, abstractmethod
-from LLM.LLMResult import LLMResult
-from models.Message import Message
+from LLM.result import LLMResult
+from models.message import Message
 
-class LLMClientInterface(ABC):
+class BaseLLMClient(ABC):
 
     @abstractmethod
     def generate(self, messages: list[Message]) -> LLMResult:

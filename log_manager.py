@@ -1,7 +1,7 @@
 import logging
 from logging.handlers import RotatingFileHandler
 import os
-from ConfigManager import ConfigManager
+from config_manager import ConfigManager
 
 class LogManager:
     _logger = None

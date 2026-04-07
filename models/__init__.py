@@ -1,1 +1,1 @@
-from models.Role import Role
+from models.role import Role

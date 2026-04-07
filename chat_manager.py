@@ -1,16 +1,14 @@
-from LLM import LLMClientInterface
-from LogManager import LogManager
-import pydoc
-from ConfigManager import ConfigManager
+from LLM import BaseLLMClient
+from log_manager import LogManager
 from models import Role
-from models.Message import Message
+from models.message import Message
 
 
 logger = LogManager.get_logger(__name__)
 
 class LLMChatManager:
 
-    def __init__(self, llm : LLMClientInterface, system_prompt: str = "You are a helpful assistant."):
+    def __init__(self, llm : BaseLLMClient, system_prompt: str = "You are a helpful assistant."):
         self.llm = llm
         self.history : list[Message] = []
         self.history.append(Message(role=Role.SYSTEM, content=system_prompt))

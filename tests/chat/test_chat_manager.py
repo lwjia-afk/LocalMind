@@ -1,5 +1,5 @@
 import pytest
-from LLMChatManager import LLMChatManager
+from chat_manager import LLMChatManager
 
 def test_create_new_chat():
     chat = LLMChatManager(None)

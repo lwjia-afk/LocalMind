@@ -1,4 +1,4 @@
-from models.Role import Role
+from models.role import Role
 from dataclasses import dataclass
 from datetime import datetime
 
