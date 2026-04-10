@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 
 @dataclass
-class LLMResult:
+class llmResult:
     text : str
     raw : dict
     def __getitem__(self, key):

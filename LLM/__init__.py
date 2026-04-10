@@ -1,5 +1,5 @@
-from .result import LLMResult
-from .LLMClient.base import BaseLLMClient
-from .LLMClient.ollama import OllamaClient
+from .ollama import ollamaClient
+from .base import baseLlmClient
+from .result import llmResult
 
-__all__ = ['result', 'OllamaClient', 'BaseLLMClient']
+__all__ = ['llmResult', 'ollamaClient', 'baseLlmClient']
